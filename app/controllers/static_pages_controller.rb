@@ -4,4 +4,10 @@ class StaticPagesController < ApplicationController
         @nome = "LVC Sistemas"
     end
 
+    def sobre
+    end
+
+    def contato
+    end
+    
 end
