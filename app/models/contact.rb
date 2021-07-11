@@ -1,3 +1,8 @@
 class Contact < ApplicationRecord
-    validates_presence_of :name, :phone
+    
+    validates :name, presence: true, length: { maximum: 50 }
+    validates :phone, presence: true
+
+    belongs_to :user
+
 end
